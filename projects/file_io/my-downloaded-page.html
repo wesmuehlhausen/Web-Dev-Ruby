@@ -1,0 +1,123 @@
+<!--
+    Wesley Muehlhausen
+    Personal Website Page Content
+    -HTML implementation of the personal website I am making.
+     This contains the content of the website and is linked to
+     external styling and framework.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wesley Muehlhausen - Website</title>
+        <link rel="stylesheet" href="page_style.css">
+        <link rel="icon" href="imgs/logo.jpg">
+        <script type="text/javascript"  src="page_script.js"></script>
+        
+    </head>
+    <body>
+
+        <div id="particles-js">
+            <div class="tabs fade-in">
+                <button id="home-button" class="tab-button" onclick="openTab('home-button', 'home-content')">wesmuehlhausen.com</button>
+                <button id="about-button" class="tab-button" onclick="openTab('about-button', 'about-content')">About Me</button>
+                <button id="proj-button" class="tab-button" onclick="openTab('proj-button', 'proj-content')">Projects</button>
+                <button id="code-button" class="tab-button" onclick="openTab('code-button', 'code-content')">Code</button>
+
+            </div>
+            
+            <div id="home-content" class="tab-content click-in" >
+                <h3 id="home-heading">Home</h3>
+                <p id="home-text" class="aleft">Welcome to my humble abode. Take a look around and see who I am, what projects I'm working on, the code that goes along with them, and how to get in contact with me.
+                    Click anywhere on the background to add more particles to the background.</p>
+                
+                    
+                
+            </div>
+            <div id="about-content" class="tab-content click-in">
+                <h3 id="about-heading">About Me</h3>
+                <p id="about-text" class="aleft">
+                    Hello, my name is Wesley Muehlhausen. I recently got my bachelor's degree in computer science major at <a href="https://www.gonzaga.edu/">Gonzaga University</a>. 
+                    When I'm not coding you can find me rock climbing or pumping iron. Want to get in touch? Shoot me an email or reach out through any of the following options:<br><br>
+                </p>
+                <div id="src-icons"> 
+
+                    <a class="noUl" href="https://github.com/wesmuehlhausen">
+                        <img src="imgs/git2.png" alt="Img Error" id="igit" class="src-img" onClick="imgClick('igit')">
+                    </a>
+                    <a class="noUl" href="https://www.linkedin.com/in/wesley-muehlhausen-9584a3186/">
+                        <img src="imgs/ln2.png" alt="Img Error" id="iln" class="src-img" onClick="imgClick('iln')">
+                    </a>
+                    <a class="noUl" href="mailto:wesmuehlhausen@gmail.com">
+                        <img src="imgs/gl.png" alt="Img Error" id="igl" class="src-img" onClick="imgClick('igl')">
+                    </a>
+                </div> 
+
+                
+            </div>
+            <div id="proj-content" class="tab-content click-in">
+                <h3 id="proj-heading">Projects</h3>
+                
+                <div id="deep-space-button" class="proj-block">
+                    <a href="game/index.html" class="img-src">
+                        <h4 id="deep-space-title">Deep Space</h4>
+                        <p id="deep-space-text" class="proj-txt">
+                            A 2D spaceship shooter game. Playable on the browser. See how long you last in space!
+                        </p>                        
+                    </a>
+                </div><br>
+
+                <div id="cholera-button" class="proj-block">
+                    <a href="https://github.com/wesmuehlhausen/Cholera-Transmission-Model" class="img-src">
+                        <h4 id="cholera-title">Cholera Transmission Model</h4>
+                        <p id="cholera-text" class="proj-txt">
+                            A Cholera transmission model used to simulate the transmission of Cholera in a population with limited water accessibility.
+                        </p>                        
+                    </a>
+                </div><br>
+
+                <div class="proj-block">
+                    <a href="max_lift_calc/page.html" class="img-src">
+                        <h4>1 Rep Max Calculator</h4>
+                        <p class="proj-txt">
+                            Click here to find out how much weight you can theoretically lift for 
+                            one rep based on lower weight sets you have already done of that same exercise.
+                        </p>                        
+                    </a>
+
+                </div><br>
+
+                <div class="proj-block">
+                    <h4>wesmuehlhausen.com</h4>
+                    <p class="proj-txt">
+                        You are looking right at it! Don't forget you can play with the particles. 
+                        They naturally will stay away from the mouse and you can add more by 
+                        clicking anywhere on the background.
+                    </p>
+                </div><br>
+
+            </div>
+
+
+            <div id="code-content" class="tab-content click-in">
+                <h3 id="code-heading">Code</h3>
+                <p id="code-text">Want to see all of the code that I have written? 
+                                    Check out my <a href="https://www.github.com/wesmuehlhausen">GitHub page</a>
+                                     to see behind the scenes:</p>
+                <div class="code-img-container">
+                    <a class="code-img" href="https://github.com/wesmuehlhausen">
+                        <img src="imgs/profile.png" alt="Img Error" id="profile-img" class="">
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript" src="particles.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+  
+
+
+    </body>
+</html>
